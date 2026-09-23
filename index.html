@@ -1,5 +1,15 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Spruha Thaware · Project &amp; Design Manager</title><meta name="description" content="Spruha Thaware, Project &amp; Design Manager in Mumbai. UI/UX project management, design operations and design–developer collaboration."><meta property="og:title" content="Spruha Thaware · Project &amp; Design Manager"><meta property="og:description" content="Case studies, design work and AI workflows by Spruha Thaware."><meta name="theme-color" content="#0A0C14"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Cdefs%3E%3ClinearGradient id=%27g%27 x1=%270%27 y1=%270%27 x2=%271%27 y2=%271%27%3E%3Cstop offset=%270%27 stop-color=%27%237B7CFF%27/%3E%3Cstop offset=%27.5%27 stop-color=%27%23B06CFF%27/%3E%3Cstop offset=%271%27 stop-color=%27%23FF7A59%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27url(%23g)%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Arial,sans-serif%27 font-size=%2726%27 font-weight=%27900%27 fill=%27white%27 text-anchor=%27middle%27%3EST%3C/text%3E%3C/svg%3E">
+
+
+
+
+
+
+
+
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -11,6 +21,10 @@
   --iris:#7B7CFF; --violet:#B06CFF; --coral:#FF7A59; --amber:#FFC857; --mint:#36E2A6; --sky:#4CC9F0; --pink:#FF6FB5;
   --grad:linear-gradient(120deg,#7B7CFF 0%,#B06CFF 45%,#FF7A59 100%);
   --grad-2:linear-gradient(120deg,#4CC9F0,#7B7CFF 55%,#B06CFF);
+  --hdr:rgba(10,12,20,.72); --glass:rgba(22,26,40,.88); --strip:rgba(16,19,30,.6); --citem:rgba(10,12,20,.65);
+  --gridline:rgba(255,255,255,.035); --hover:rgba(255,255,255,.04); --ring:rgba(255,255,255,.12); --ring2:rgba(255,255,255,.06);
+  --band:linear-gradient(135deg,#1B1C4A,#2A1845 55%,#3A1C2A); --on-c:#0A0C14; --dot-off:#3A4058; --avatar:#12152A;
+  --teal:#22D3C5; --berry:#E0457B;
   --r:16px; --maxw:1160px;
   --display:"Mulish",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -46,17 +60,17 @@ p{margin:0}
   radial-gradient(700px 420px at 12% -5%,rgba(123,124,255,.18),transparent 70%),
   radial-gradient(600px 380px at 95% 8%,rgba(255,122,89,.12),transparent 70%),
   radial-gradient(800px 500px at 50% 110%,rgba(176,108,255,.10),transparent 70%)}
-.bg-grid{position:absolute;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 75%)}
+.bg-grid{position:absolute;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(var(--gridline) 1px,transparent 1px),linear-gradient(90deg,var(--gridline) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 75%)}
 
 /* header */
-header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(10,12,20,.72);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--hdr);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em;white-space:nowrap}
 .logo .mark{width:34px;height:34px;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-size:14px;font-weight:900;color:#fff;box-shadow:0 6px 20px -6px rgba(176,108,255,.7)}
 nav.links{display:flex;gap:4px;align-items:center}
 nav.links a{display:flex;align-items:center;gap:7px;padding:9px 14px;border-radius:999px;font-weight:700;font-size:15px;color:var(--fg-2);transition:color .2s,background .2s}
 nav.links a .ic{font-size:16px;opacity:.8}
-nav.links a:hover{color:var(--fg);background:rgba(255,255,255,.04)}
+nav.links a:hover{color:var(--fg);background:var(--hover)}
 nav.links a[aria-current="page"]{color:var(--fg);background:var(--card-2);box-shadow:inset 0 0 0 1px var(--line-2)}
 nav.links a.hire{background:var(--grad);color:#fff;margin-left:6px}
 .menu-btn{display:none;background:var(--card);border:1px solid var(--line);color:var(--fg);padding:8px;border-radius:10px;cursor:pointer;font-size:22px}
@@ -87,7 +101,7 @@ section{padding-block:76px}
 .hero{padding-block:64px 40px;position:relative}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
 @media (max-width:940px){.hero-grid{grid-template-columns:1fr}}
-.pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--fg-2);background:rgba(22,26,40,.8);border:1px solid var(--line-2);padding:7px 14px 7px 10px;border-radius:999px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--fg-2);background:var(--glass);border:1px solid var(--line-2);padding:7px 14px 7px 10px;border-radius:999px}
 .pill .dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(54,226,166,.18);animation:pulse 2s infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 7px rgba(54,226,166,0)}}
 .hero h1{font-size:clamp(40px,6vw,74px);font-weight:900;margin-top:22px}
@@ -102,13 +116,13 @@ section{padding-block:76px}
 /* hero art */
 .art{position:relative;width:100%;max-width:520px;aspect-ratio:1/1;margin-inline:auto;font-size:clamp(10px,2.6vw,13.5px)}
 .art .orb{position:absolute;inset:14%;border-radius:50%;background:conic-gradient(from 200deg,#7B7CFF,#B06CFF,#FF7A59,#FFC857,#36E2A6,#4CC9F0,#7B7CFF);filter:blur(60px);opacity:.38}
-.art .ring{position:absolute;inset:9%;border-radius:50%;border:1px dashed rgba(255,255,255,.12)}
-.art .ring.r2{inset:22%;border-style:solid;border-color:rgba(255,255,255,.06)}
-.fc{position:absolute;background:rgba(22,26,40,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-2);border-radius:1.3em;padding:1.1em 1.2em;box-shadow:0 30px 60px -24px rgba(0,0,0,.7);animation:float 6s ease-in-out infinite}
+.art .ring{position:absolute;inset:9%;border-radius:50%;border:1px dashed var(--ring)}
+.art .ring.r2{inset:22%;border-style:solid;border-color:var(--ring2)}
+.fc{position:absolute;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-2);border-radius:1.3em;padding:1.1em 1.2em;box-shadow:0 30px 60px -24px rgba(0,0,0,.7);animation:float 6s ease-in-out infinite}
 @keyframes float{50%{transform:translateY(-10px)}}
 .fc.main{left:24%;top:33%;width:52%;text-align:center;padding:1.6em 1.2em;animation-delay:-1s;z-index:2}
 .avatar{width:5.6em;height:5.6em;margin:0 auto .9em;border-radius:50%;padding:3px;background:var(--grad)}
-.avatar span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:#12152A;font-weight:900;font-size:1.9em;letter-spacing:-.02em}
+.avatar span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--avatar);font-weight:900;font-size:1.9em;letter-spacing:-.02em}
 .avatar em{font-style:normal}
 .fc.main b{display:block;font-size:1.3em;font-weight:900}
 .fc.main small{display:block;color:var(--fg-3);font-weight:600;margin-top:.1em}
@@ -141,7 +155,7 @@ section{padding-block:76px}
 @media (prefers-reduced-motion:reduce){.fc,.pill .dot,.marquee .track,.view{animation:none!important}html{scroll-behavior:auto}}
 
 /* marquee */
-.marquee{overflow:hidden;border-block:1px solid var(--line);background:rgba(16,19,30,.6);padding-block:16px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee{overflow:hidden;border-block:1px solid var(--line);background:var(--strip);padding-block:16px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .marquee .track{display:flex;gap:36px;width:max-content;animation:mq 38s linear infinite}
 .marquee span{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:var(--fg-2);white-space:nowrap}
 .marquee span .ic{color:var(--c);font-size:20px}
@@ -177,7 +191,7 @@ section{padding-block:76px}
 .case .result{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}
 .case .result .k{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--fg-2);font-weight:700}
 .case .result .k b{color:var(--fg);font-size:20px;font-weight:900}
-.go{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--c);color:#0A0C14;font-size:20px;transition:transform .3s}
+.go{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--c);color:var(--on-c);font-size:20px;transition:transform .3s}
 .case:hover .go{transform:rotate(-45deg)}
 
 /* process */
@@ -199,7 +213,7 @@ section{padding-block:76px}
 .tool small{display:block;font-weight:600;color:var(--fg-3);font-size:12px}
 
 /* CTA band */
-.band{position:relative;overflow:hidden;border-radius:26px;padding:clamp(28px,5vw,56px);background:linear-gradient(135deg,#1B1C4A,#2A1845 55%,#3A1C2A);border:1px solid var(--line-2);display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.band{position:relative;overflow:hidden;border-radius:26px;padding:clamp(28px,5vw,56px);background:var(--band);border:1px solid var(--line-2);display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
 .band::before{content:"";position:absolute;width:360px;height:360px;right:-80px;top:-140px;border-radius:50%;background:radial-gradient(circle,rgba(255,122,89,.45),transparent 65%)}
 .band::after{content:"";position:absolute;width:300px;height:300px;left:-100px;bottom:-160px;border-radius:50%;background:radial-gradient(circle,rgba(123,124,255,.45),transparent 65%)}
 .band > *{position:relative;z-index:1}
@@ -271,10 +285,10 @@ section{padding-block:76px}
 .cmp .big{font-size:64px;font-weight:900;letter-spacing:-.04em;line-height:1;margin:8px 0 16px}
 .cmp .big em{font-size:18px;font-style:normal;color:var(--fg-3);font-weight:700;letter-spacing:0;margin-left:6px}
 .cmp .dots{display:flex;gap:6px}
-.cmp .dots i{flex:1;height:12px;border-radius:6px;background:#3A4058}
+.cmp .dots i{flex:1;height:12px;border-radius:6px;background:var(--dot-off)}
 .cmp.new{border-color:rgba(54,226,166,.35);background:linear-gradient(180deg,rgba(54,226,166,.07),var(--card))}
 .cmp.new .dots i{background:var(--mint)}
-.cmp.new .dots i.off{background:transparent;border:1px dashed #3A4058}
+.cmp.new .dots i.off{background:transparent;border:1px dashed var(--dot-off)}
 .vs{align-self:center;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--grad);font-weight:900;color:#fff;font-size:22px}
 .outcomes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
 @media (max-width:900px){.outcomes{grid-template-columns:1fr 1fr}}
@@ -330,13 +344,13 @@ section{padding-block:76px}
 .cert small{display:inline-flex;align-items:center;gap:6px;color:var(--c);font-weight:800;font-size:14px}
 
 /* contact */
-.contact-card{position:relative;overflow:hidden;border-radius:26px;padding:clamp(26px,5vw,56px);background:linear-gradient(135deg,#1B1C4A,#2A1845 55%,#3A1C2A);border:1px solid var(--line-2);display:grid;grid-template-columns:1.05fr .95fr;gap:40px}
+.contact-card{position:relative;overflow:hidden;border-radius:26px;padding:clamp(26px,5vw,56px);background:var(--band);border:1px solid var(--line-2);display:grid;grid-template-columns:1.05fr .95fr;gap:40px}
 .contact-card::before{content:"";position:absolute;width:420px;height:420px;right:-120px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(255,122,89,.4),transparent 65%)}
 .contact-card > *{position:relative}
 @media (max-width:860px){.contact-card{grid-template-columns:1fr}}
 .contact-card h2{font-size:clamp(34px,5vw,56px);font-weight:900}
 .clist{display:flex;flex-direction:column;gap:12px}
-.citem{display:flex;align-items:center;gap:14px;padding:16px;border-radius:16px;background:rgba(10,12,20,.65);border:1px solid var(--line-2)}
+.citem{display:flex;align-items:center;gap:14px;padding:16px;border-radius:16px;background:var(--citem);border:1px solid var(--line-2)}
 .citem > div{flex:1;min-width:0}
 .citem small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3)}
 .citem span{font-weight:800;overflow-wrap:anywhere}
@@ -398,6 +412,95 @@ section{padding-block:76px}
 .tt-chips > span:nth-child(2){margin-left:18px}.tt-chips > span:nth-child(3){margin-left:36px}.tt-chips > span:nth-child(4){margin-left:18px}
 @media (max-width:820px){.ai-teaser{grid-template-columns:1fr}.tt-chips > span{margin-left:0!important}}
 @media (prefers-reduced-motion:reduce){.ai-art .spin,.ai-art .pulse,.ai-art .flow path{animation:none}}
+
+
+.own{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+@media (max-width:900px){.own{grid-template-columns:1fr}}
+.own-grp{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.own-hd{display:flex;gap:12px;align-items:center;padding-bottom:14px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.own-hd b{display:block;font-size:16.5px;font-weight:900}
+.own-hd small{display:block;font-family:var(--mono);font-size:11px;color:var(--fg-3);letter-spacing:.04em}
+.own ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:0}
+.own-grp.t-berry ul{grid-template-columns:1fr}
+@media (max-width:560px){.own ul{grid-template-columns:1fr}}
+.own li{display:flex;align-items:flex-start;gap:10px;padding:11px 2px;border-bottom:1px dashed var(--line);font-weight:700;font-size:14.5px}
+.own li .ic{color:var(--c);font-size:16px;margin-top:3px}
+.own li span{display:block;line-height:1.4}
+.own li em{display:block;margin-top:2px;font-style:normal;font-size:12.5px;font-weight:600;color:var(--fg-3)}
+.own-note{display:flex;gap:10px;margin-top:14px;font-size:13px;color:var(--fg-3);line-height:1.5}
+.own-note .ic{flex:none;margin-top:2px}
+.tooling{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;margin-top:10px}
+@media (max-width:900px){.tooling{grid-template-columns:1fr;gap:20px}}
+.tooling p{font-size:16px;line-height:1.7;max-width:52ch;font-weight:500}
+.tool-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card)}
+.tool-list li{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-bottom:1px solid var(--line)}
+.tool-list li:last-child{border-bottom:0}
+.tool-list b{display:block;font-size:15px;font-weight:800;margin-bottom:2px}
+.tool-list span:not(.tile){display:block;font-size:14px;line-height:1.55;color:var(--fg-2);font-weight:500}
+
+.cl-box{position:relative;overflow:hidden;margin-top:14px;border-radius:24px;border:1px solid var(--line-2);background:var(--band);padding:clamp(22px,4vw,40px)}
+.cl-box::before{content:"";position:absolute;width:420px;height:420px;right:-140px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(176,108,255,.35),transparent 65%);pointer-events:none}
+.cl-box::after{content:"";position:absolute;width:360px;height:360px;left:-160px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(34,211,197,.25),transparent 65%);pointer-events:none}
+.cl-box > *{position:relative}
+.cl-top{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+@media (max-width:900px){.cl-top{grid-template-columns:1fr}}
+.cl-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border-radius:999px;background:var(--glass);border:1px solid var(--line-2);font:800 12.5px var(--display);color:var(--violet)}
+.cl-copy h2{font-size:clamp(24px,3vw,32px);font-weight:900;margin:14px 0 12px}
+.cl-copy p{font-size:16px;line-height:1.7;color:var(--fg-2);font-weight:500;max-width:50ch}
+.cl-flow{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px}
+.cl-col{display:flex;flex-direction:column;gap:8px}
+.cl-col span{display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:12px;background:var(--glass);border:1px solid var(--line-2);font-weight:800;font-size:13.5px;box-shadow:0 8px 20px -14px rgba(0,0,0,.4)}
+.cl-col span .ic{color:var(--c);font-size:16px}
+.cl-col.out span{border-color:color-mix(in srgb,var(--mint) 45%,var(--line-2))}
+.cl-col.out span .ic{color:var(--mint)}
+.cl-core{position:relative;width:64px;height:64px;display:grid;place-items:center}
+.cl-core i{position:absolute;inset:0;border-radius:50%;background:var(--grad);box-shadow:0 0 0 8px rgba(176,108,255,.15),0 16px 34px -10px rgba(176,108,255,.7);animation:clp 2.8s ease-in-out infinite}
+.cl-core span{position:relative;color:#fff;font-size:26px;display:grid}
+@keyframes clp{50%{transform:scale(1.07)}}
+.cl-flow::before{content:"";grid-column:1/-1;grid-row:1;height:2px;align-self:center;background:linear-gradient(90deg,transparent,var(--line-2) 20%,var(--line-2) 80%,transparent);z-index:-1}
+.cl-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+@media (max-width:820px){.cl-cards{grid-template-columns:1fr}}
+.cl-card{display:flex;flex-direction:column;gap:10px;padding:20px;border-radius:18px;background:var(--glass);border:1px solid var(--line-2);transition:transform .25s,border-color .25s}
+.cl-card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--c) 55%,var(--line-2))}
+.cl-card b{font-size:16.5px;font-weight:900}
+.cl-card p{font-size:14.5px;line-height:1.6;color:var(--fg-2);font-weight:500}
+.cl-card small{margin-top:auto;display:inline-flex;align-items:center;gap:6px;align-self:flex-start;padding:5px 10px;border-radius:999px;background:var(--cb);color:var(--c);font:700 12px var(--mono)}
+@media (prefers-reduced-motion:reduce){.cl-core i{animation:none}}
+/* bank case */
+.t-teal{--c:var(--teal);--cb:rgba(34,211,197,.14)}
+.t-berry{--c:var(--berry);--cb:rgba(224,69,123,.15)}
+.nda{display:flex;gap:12px;align-items:flex-start;margin:4px 0 8px;padding:14px 18px;border-radius:14px;background:rgba(34,211,197,.07);border:1px dashed rgba(34,211,197,.45);color:var(--fg-2);font-size:14.5px;font-weight:600}
+.nda .ic{color:var(--teal);font-size:18px;margin-top:2px}
+.themes{display:flex;flex-wrap:wrap;gap:10px}
+.themes span{display:inline-flex;align-items:center;gap:9px;padding:11px 16px;border-radius:14px;background:var(--cb);color:var(--fg);border:1px solid color-mix(in srgb,var(--c) 35%,transparent);font-weight:800;font-size:14.5px}
+.themes .ic{color:var(--c);font-size:18px}
+.case.feature{grid-column:1/-1;display:grid;grid-template-columns:1.1fr 1fr}
+.case.feature .cover{aspect-ratio:auto;min-height:280px;height:100%}
+@media (max-width:860px){.case.feature{grid-template-columns:1fr}.case.feature .cover{aspect-ratio:16/10;min-height:0}}
+.case .new{position:absolute;top:14px;left:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;background:var(--glass);border:1px solid color-mix(in srgb,var(--teal) 50%,transparent);color:var(--teal);font:800 12px var(--display)}
+@media (max-width:980px){#v-icici .plist[style]{grid-template-columns:1fr!important}}
+
+/* ===== Light theme ===== */
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#F6F6FB; --bg-2:#FFFFFF; --card:#FFFFFF; --card-2:#EEF0F7; --line:#E2E4EE; --line-2:#CFD3E2;
+  --fg:#151827; --fg-2:#454B63; --fg-3:#6E7490;
+  --iris:#5354E0; --violet:#8237D9; --coral:#DF5227; --amber:#B07800; --mint:#0C9466; --sky:#0A84B8; --pink:#CC2F80;
+  --teal:#0B8F86; --berry:#C22B61;
+  --grad:linear-gradient(120deg,#5B5CF0 0%,#9A45F0 45%,#F2643E 100%);
+  --hdr:rgba(246,246,251,.82); --glass:rgba(255,255,255,.9); --strip:rgba(255,255,255,.75); --citem:#FFFFFF;
+  --gridline:rgba(20,24,40,.05); --hover:rgba(20,24,40,.05); --ring:rgba(20,24,40,.14); --ring2:rgba(20,24,40,.07);
+  --band:linear-gradient(135deg,#ECEBFF,#F4E8FF 55%,#FFEDE5); --on-c:#FFFFFF; --dot-off:#D3D6E4; --avatar:#FFFFFF;
+}
+:root[data-theme="light"] .bg-deco{opacity:.7}
+:root[data-theme="light"] .fc,:root[data-theme="light"] .stat,:root[data-theme="light"] .case,:root[data-theme="light"] .pstep,:root[data-theme="light"] .ai-card,:root[data-theme="light"] .job,:root[data-theme="light"] .cert,:root[data-theme="light"] .tool,:root[data-theme="light"] .pitem,:root[data-theme="light"] .outcome,:root[data-theme="light"] .meta > div,:root[data-theme="light"] .proto,:root[data-theme="light"] .srow{box-shadow:0 1px 2px rgba(20,24,40,.04),0 8px 24px -14px rgba(20,24,40,.18)}
+:root[data-theme="light"] .ai-art .lbl{fill:var(--fg-2)}
+.theme-btn{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--card);border:1px solid var(--line-2);color:var(--fg);cursor:pointer;font-size:18px;flex:none;transition:transform .2s,border-color .2s}
+.theme-btn:hover{transform:rotate(-12deg);border-color:var(--fg-3)}
+.theme-btn .i-sun{display:none}
+:root[data-theme="light"] .theme-btn .i-sun{display:block}
+:root[data-theme="light"] .theme-btn .i-moon{display:none}
+.top-actions{display:flex;align-items:center;gap:10px}
 footer{border-top:1px solid var(--line);padding-block:28px;color:var(--fg-3);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 footer .soc{display:flex;gap:10px}
@@ -417,13 +520,13 @@ footer .soc a:hover{color:var(--fg)}
 <linearGradient id="g-area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4CC9F0" stop-opacity=".45"/><stop offset="1" stop-color="#4CC9F0" stop-opacity="0"/></linearGradient>
 <radialGradient id="g-orange" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#FFD27A"/><stop offset=".7" stop-color="#FF9A3C"/><stop offset="1" stop-color="#F0712A"/></radialGradient>
 <filter id="f-sh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity=".28"/></filter>
-<symbol id="i-alarm-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></symbol><symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /><circle cx="12" cy="8" r="6" /></symbol><symbol id="i-bell-ring" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /><path d="M4 2C2.8 3.7 2 5.7 2 8" /><path d="M22 8c0-2.3-.8-4.3-2-6" /></symbol><symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /><rect width="16" height="12" x="4" y="8" rx="2" /><path d="M2 14h2" /><path d="M20 14h2" /><path d="M15 13v2" /><path d="M9 13v2" /></symbol><symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></symbol><symbol id="i-bug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 2 1.88 1.88" /><path d="M14.12 3.88 16 2" /><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1" /><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6" /><path d="M12 20v-9" /><path d="M6.53 9C4.6 8.8 3 7.1 3 5" /><path d="M6 13H2" /><path d="M3 21c0-2.1 1.7-3.9 3.8-4" /><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4" /><path d="M22 13h-4" /><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4" /></symbol><symbol id="i-building-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /><path d="M10 6h4" /><path d="M10 10h4" /><path d="M10 14h4" /><path d="M10 18h4" /></symbol><symbol id="i-calendar-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /><path d="m9 16 2 2 4-4" /></symbol><symbol id="i-calendar-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" /><path d="M16 2v4" /><path d="M8 2v4" /><path d="M3 10h5" /><path d="M17.5 17.5 16 16.3V14" /><circle cx="16" cy="16" r="6" /></symbol><symbol id="i-calendar-days" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /><path d="M8 14h.01" /><path d="M12 14h.01" /><path d="M16 14h.01" /><path d="M8 18h.01" /><path d="M12 18h.01" /><path d="M16 18h.01" /></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></symbol><symbol id="i-circle-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></symbol><symbol id="i-clipboard-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></symbol><symbol id="i-code-xml" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></symbol><symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /><circle cx="12" cy="12" r="10" /></symbol><symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></symbol><symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></symbol><symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></symbol><symbol id="i-footprints" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></symbol><symbol id="i-git-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" /></symbol><symbol id="i-git-merge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3" /><circle cx="6" cy="6" r="3" /><path d="M6 21V9a9 9 0 0 0 9 9" /></symbol><symbol id="i-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol><symbol id="i-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></symbol><symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol><symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></symbol><symbol id="i-layout-template" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="7" x="3" y="3" rx="1" /><rect width="9" height="7" x="3" y="14" rx="1" /><rect width="5" height="7" x="16" y="14" rx="1" /></symbol><symbol id="i-lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></symbol><symbol id="i-list-checks" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></symbol><symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></symbol><symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></symbol><symbol id="i-message-circle-more" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /><path d="M8 12h.01" /><path d="M12 12h.01" /><path d="M16 12h.01" /></symbol><symbol id="i-message-square-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /><path d="M13 8H7" /><path d="M17 12H7" /></symbol><symbol id="i-messages-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" /><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" /></symbol><symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></symbol><symbol id="i-mouse-pointer-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z" /></symbol><symbol id="i-newspaper" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" /><path d="M18 14h-8" /><path d="M15 18h-5" /><path d="M10 6h8v4h-8V6Z" /></symbol><symbol id="i-notebook-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></symbol><symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor" /><circle cx="17.5" cy="10.5" r=".5" fill="currentColor" /><circle cx="8.5" cy="7.5" r=".5" fill="currentColor" /><circle cx="6.5" cy="12.5" r=".5" fill="currentColor" /><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" /></symbol><symbol id="i-pen-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z" /><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18" /><path d="m2.3 2.3 7.286 7.286" /><circle cx="11" cy="11" r="2" /></symbol><symbol id="i-plug-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z" /><path d="m2 22 3-3" /><path d="M7.5 13.5 10 11" /><path d="M10.5 16.5 13 14" /><path d="m18 3-4 4h6l-4 4" /></symbol><symbol id="i-radar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34" /><path d="M4 6h.01" /><path d="M2.29 9.62A10 10 0 1 0 21.31 8.35" /><path d="M16.24 7.76A6 6 0 1 0 8.23 16.67" /><path d="M12 18h.01" /><path d="M17.99 11.66A6 6 0 0 1 15.77 16.67" /><circle cx="12" cy="12" r="2" /><path d="m13.41 10.59 5.66-5.66" /></symbol><symbol id="i-refresh-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></symbol><symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></symbol><symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></symbol><symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3" /><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" /><circle cx="18" cy="5" r="3" /></symbol><symbol id="i-scan-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="1" /><path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0" /></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></symbol><symbol id="i-search-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 11 2 2 4-4" /><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></symbol><symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></symbol><symbol id="i-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></symbol><symbol id="i-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></symbol><symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /><path d="M20 3v4" /><path d="M22 5h-4" /><path d="M4 17v2" /><path d="M5 18H3" /></symbol><symbol id="i-square-kanban" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M8 7v7" /><path d="M12 7v4" /><path d="M16 7v9" /></symbol><symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></symbol><symbol id="i-sun-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.9 4.9 1.4 1.4" /><path d="m17.7 17.7 1.4 1.4" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.3 17.7-1.4 1.4" /><path d="m19.1 4.9-1.4 1.4" /></symbol><symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></symbol><symbol id="i-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M13 5v2" /><path d="M13 17v2" /><path d="M13 11v2" /></symbol><symbol id="i-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></symbol><symbol id="i-train-front" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.1V7a4 4 0 0 0 8 0V3.1" /><path d="m9 15-1-1" /><path d="m15 15 1-1" /><path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z" /><path d="m8 19-2 3" /><path d="m16 19 2 3" /></symbol><symbol id="i-trending-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7" /><polyline points="16 17 22 17 22 11" /></symbol><symbol id="i-user-round" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5" /><path d="M20 21a8 8 0 0 0-16 0" /></symbol><symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol><symbol id="i-wand-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72" /><path d="m14 7 3 3" /><path d="M5 6v4" /><path d="M19 14v4" /><path d="M10 2v2" /><path d="M7 8H3" /><path d="M21 16h-4" /><path d="M11 3H9" /></symbol><symbol id="i-workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2" /><path d="M7 11v4a2 2 0 0 0 2 2h4" /><rect width="8" height="8" x="13" y="13" rx="2" /></symbol><symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" /></symbol></defs></svg>
+<symbol id="i-accessibility" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="4" r="1" /><path d="m18 19 1-7-6 1" /><path d="m5 8 3-3 5.5 3-2.36 3.5" /><path d="M4.24 14.5a5 5 0 0 0 6.88 6" /><path d="M13.76 17.5a5 5 0 0 0-6.88-6" /></symbol><symbol id="i-alarm-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></symbol><symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /><circle cx="12" cy="8" r="6" /></symbol><symbol id="i-badge-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></symbol><symbol id="i-bell-ring" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /><path d="M4 2C2.8 3.7 2 5.7 2 8" /><path d="M22 8c0-2.3-.8-4.3-2-6" /></symbol><symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /><rect width="16" height="12" x="4" y="8" rx="2" /><path d="M2 14h2" /><path d="M20 14h2" /><path d="M15 13v2" /><path d="M9 13v2" /></symbol><symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /><rect width="20" height="14" x="2" y="6" rx="2" /></symbol><symbol id="i-bug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 2 1.88 1.88" /><path d="M14.12 3.88 16 2" /><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1" /><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6" /><path d="M12 20v-9" /><path d="M6.53 9C4.6 8.8 3 7.1 3 5" /><path d="M6 13H2" /><path d="M3 21c0-2.1 1.7-3.9 3.8-4" /><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4" /><path d="M22 13h-4" /><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4" /></symbol><symbol id="i-building-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /><path d="M10 6h4" /><path d="M10 10h4" /><path d="M10 14h4" /><path d="M10 18h4" /></symbol><symbol id="i-calendar-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /><path d="m9 16 2 2 4-4" /></symbol><symbol id="i-calendar-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" /><path d="M16 2v4" /><path d="M8 2v4" /><path d="M3 10h5" /><path d="M17.5 17.5 16 16.3V14" /><circle cx="16" cy="16" r="6" /></symbol><symbol id="i-calendar-days" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /><path d="M8 14h.01" /><path d="M12 14h.01" /><path d="M16 14h.01" /><path d="M8 18h.01" /><path d="M12 18h.01" /><path d="M16 18h.01" /></symbol><symbol id="i-chart-pie" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z" /><path d="M21.21 15.89A10 10 0 1 1 8 2.83" /></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></symbol><symbol id="i-circle-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></symbol><symbol id="i-clipboard-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></symbol><symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></symbol><symbol id="i-code-xml" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></symbol><symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /><circle cx="12" cy="12" r="10" /></symbol><symbol id="i-contact" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 2v2" /><path d="M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" /><path d="M8 2v2" /><circle cx="12" cy="11" r="3" /><rect x="3" y="4" width="18" height="18" rx="2" /></symbol><symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></symbol><symbol id="i-credit-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2" /><line x1="2" x2="22" y1="10" y2="10" /></symbol><symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" x2="12" y1="15" y2="3" /></symbol><symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></symbol><symbol id="i-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" /><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" /><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" /><path d="m2 2 20 20" /></symbol><symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></symbol><symbol id="i-footprints" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></symbol><symbol id="i-git-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" /></symbol><symbol id="i-git-merge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3" /><circle cx="6" cy="6" r="3" /><path d="M6 21V9a9 9 0 0 0 9 9" /></symbol><symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></symbol><symbol id="i-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol><symbol id="i-hand-coins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /><path d="m2 16 6 6" /><circle cx="16" cy="9" r="2.9" /><circle cx="6" cy="5" r="3" /></symbol><symbol id="i-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></symbol><symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol><symbol id="i-id-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10h2" /><path d="M16 14h2" /><path d="M6.17 15a3 3 0 0 1 5.66 0" /><circle cx="9" cy="11" r="2" /><rect x="2" y="5" width="20" height="14" rx="2" /></symbol><symbol id="i-inbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12" /><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" /></symbol><symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22" /><line x1="6" x2="6" y1="18" y2="11" /><line x1="10" x2="10" y1="18" y2="11" /><line x1="14" x2="14" y1="18" y2="11" /><line x1="18" x2="18" y1="18" y2="11" /><polygon points="12 2 20 7 4 7" /></symbol><symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></symbol><symbol id="i-layout-template" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="7" x="3" y="3" rx="1" /><rect width="9" height="7" x="3" y="14" rx="1" /><rect width="5" height="7" x="16" y="14" rx="1" /></symbol><symbol id="i-lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></symbol><symbol id="i-list-checks" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></symbol><symbol id="i-list-todo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="6" height="6" rx="1" /><path d="m3 17 2 2 4-4" /><path d="M13 6h8" /><path d="M13 12h8" /><path d="M13 18h8" /></symbol><symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol><symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></symbol><symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></symbol><symbol id="i-message-circle-more" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /><path d="M8 12h.01" /><path d="M12 12h.01" /><path d="M16 12h.01" /></symbol><symbol id="i-message-square-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /><path d="M13 8H7" /><path d="M17 12H7" /></symbol><symbol id="i-messages-square" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" /><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" /></symbol><symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></symbol><symbol id="i-monitor-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8" /><path d="M10 19v-3.96 3.15" /><path d="M7 19h5" /><rect width="6" height="10" x="16" y="12" rx="2" /></symbol><symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></symbol><symbol id="i-mouse-pointer-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z" /></symbol><symbol id="i-newspaper" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" /><path d="M18 14h-8" /><path d="M15 18h-5" /><path d="M10 6h8v4h-8V6Z" /></symbol><symbol id="i-notebook-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></symbol><symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor" /><circle cx="17.5" cy="10.5" r=".5" fill="currentColor" /><circle cx="8.5" cy="7.5" r=".5" fill="currentColor" /><circle cx="6.5" cy="12.5" r=".5" fill="currentColor" /><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" /></symbol><symbol id="i-pen-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z" /><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18" /><path d="m2.3 2.3 7.286 7.286" /><circle cx="11" cy="11" r="2" /></symbol><symbol id="i-piggy-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z" /><path d="M2 9v1c0 1.1.9 2 2 2h1" /><path d="M16 11h.01" /></symbol><symbol id="i-plug-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z" /><path d="m2 22 3-3" /><path d="M7.5 13.5 10 11" /><path d="M10.5 16.5 13 14" /><path d="m18 3-4 4h6l-4 4" /></symbol><symbol id="i-qr-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3" rx="1" /><rect width="5" height="5" x="16" y="3" rx="1" /><rect width="5" height="5" x="3" y="16" rx="1" /><path d="M21 16h-3a2 2 0 0 0-2 2v3" /><path d="M21 21v.01" /><path d="M12 7v3a2 2 0 0 1-2 2H7" /><path d="M3 12h.01" /><path d="M12 3h.01" /><path d="M12 16v.01" /><path d="M16 12h1" /><path d="M21 12v.01" /><path d="M12 21v-1" /></symbol><symbol id="i-radar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34" /><path d="M4 6h.01" /><path d="M2.29 9.62A10 10 0 1 0 21.31 8.35" /><path d="M16.24 7.76A6 6 0 1 0 8.23 16.67" /><path d="M12 18h.01" /><path d="M17.99 11.66A6 6 0 0 1 15.77 16.67" /><circle cx="12" cy="12" r="2" /><path d="m13.41 10.59 5.66-5.66" /></symbol><symbol id="i-refresh-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></symbol><symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></symbol><symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></symbol><symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3" /><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" /><circle cx="18" cy="5" r="3" /></symbol><symbol id="i-scan-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="1" /><path d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0" /></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></symbol><symbol id="i-search-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 11 2 2 4-4" /><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></symbol><symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></symbol><symbol id="i-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></symbol><symbol id="i-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></symbol><symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /><path d="M20 3v4" /><path d="M22 5h-4" /><path d="M4 17v2" /><path d="M5 18H3" /></symbol><symbol id="i-square-kanban" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M8 7v7" /><path d="M12 7v4" /><path d="M16 7v9" /></symbol><symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></symbol><symbol id="i-sun-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.9 4.9 1.4 1.4" /><path d="m17.7 17.7 1.4 1.4" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.3 17.7-1.4 1.4" /><path d="m19.1 4.9-1.4 1.4" /></symbol><symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></symbol><symbol id="i-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M13 5v2" /><path d="M13 17v2" /><path d="M13 11v2" /></symbol><symbol id="i-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></symbol><symbol id="i-train-front" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.1V7a4 4 0 0 0 8 0V3.1" /><path d="m9 15-1-1" /><path d="m15 15 1-1" /><path d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z" /><path d="m8 19-2 3" /><path d="m16 19 2 3" /></symbol><symbol id="i-trending-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7" /><polyline points="16 17 22 17 22 11" /></symbol><symbol id="i-user-round" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5" /><path d="M20 21a8 8 0 0 0-16 0" /></symbol><symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></symbol><symbol id="i-wand-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72" /><path d="m14 7 3 3" /><path d="M5 6v4" /><path d="M19 14v4" /><path d="M10 2v2" /><path d="M7 8H3" /><path d="M21 16h-4" /><path d="M11 3H9" /></symbol><symbol id="i-workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2" /><path d="M7 11v4a2 2 0 0 0 2 2h4" /><rect width="8" height="8" x="13" y="13" rx="2" /></symbol><symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" /></symbol></defs></svg>
 <div class="bg-deco" aria-hidden="true"></div>
 
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#home"><span class="mark">ST</span>Spruha Thaware</a>
-    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    <div class="top-actions" style="order:3"><button class="theme-btn" id="theme-btn" type="button" aria-label="Switch to light mode" title="Switch theme"><span class="i-moon"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg></span><span class="i-sun"><svg class="ic" aria-hidden="true"><use href="#i-sun"/></svg></span></button><button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button></div>
     <nav class="links" id="nav">
       <a href="#home" data-v="home"><svg class="ic" aria-hidden="true"><use href="#i-house"/></svg>Home</a>
       <a href="#work" data-v="work"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg>Work</a>
@@ -442,17 +545,17 @@ footer .soc a:hover{color:var(--fg)}
     <section class="hero">
       <div class="hero-grid">
         <div>
-          <span class="pill"><span class="dot"></span>Open to Design Ops &amp; UX PM roles</span>
+          <span class="pill"><span class="dot"></span>Open to UX PM &amp; Design Ops roles</span>
           <h1>I make sure what gets <span class="grad-text">designed</span> is what gets <span class="u">shipped.<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 4, 197 12" fill="none" stroke="url(#ug)" stroke-width="5" stroke-linecap="round"/><defs><linearGradient id="ug" x1="0" x2="1"><stop offset="0" stop-color="#FFC857"/><stop offset="1" stop-color="#FF7A59"/></linearGradient></defs></svg></span></h1>
-          <p class="lede">I'm Spruha, a UI/UX project manager. I run delivery between designers, developers and stakeholders: scoping the work, checking builds against the designs, and getting products out on time without losing what made them good.</p>
+          <p class="lede">I'm Spruha, a UI/UX project manager with 5+ years of experience, including 3+ years leading design and digital product delivery for enterprise banking clients. I run Agile delivery across designers, developers and stakeholders, check every build against the design, and ship 95% of projects on time and within budget.</p>
           <div class="ctas">
             <a class="btn primary" href="#work"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg>See case studies</a>
-            <a class="btn" href="https://spruhaathaware.lovable.app/SpruhaThawareResume.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg>Resume</a>
+            <a class="btn" href="Spruha_Thaware_Resume_Project_Manager_UIUX.pdf" target="_blank" rel="noopener" download><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Download resume</a>
           </div>
           <div class="hero-meta">
             <span><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg>Mumbai, India</span>
             <span><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg>PM at Canvs</span>
-            <span><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>Working since 2020</span>
+            <span><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg>5+ years’ experience</span>
           </div>
         </div>
 
@@ -534,13 +637,13 @@ footer .soc a:hover{color:var(--fg)}
     </section>
 
     <section style="padding-top:20px">
-      <div class="sec-head"><span class="eyebrow">Case studies</span><h2>Selected work</h2><p class="muted">Two projects: one redesigns a user journey, the other fixes how a team delivers.</p></div>
+      <div class="sec-head"><span class="eyebrow">Case studies</span><h2>Selected work</h2><p class="muted">Three projects: running delivery for a major bank, redesigning a user journey, and fixing how a team delivers.</p></div>
       <div class="cases" data-cases></div>
     </section>
 
     <section style="padding-top:20px">
       <div class="band">
-        <div><h2>Need someone to keep design and delivery aligned?</h2><p>Open to UI/UX project management, design management and design operations roles.</p></div>
+        <div><h2>Need someone to keep design and delivery aligned?</h2><p>Open to UI/UX project management, design operations and design management roles.</p></div>
         <a class="btn primary" href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg>Get in touch</a>
       </div>
     </section>
@@ -933,7 +1036,7 @@ footer .soc a:hover{color:var(--fg)}
 <circle cx="444" cy="304" r="36" fill="#1E2334" stroke="#343B52"/>
 <rect x="427" y="289" width="34" height="32" rx="6" fill="none" stroke="#FFC857" stroke-width="3.5"/><path d="M427 299 h34 M436 284 v9 M452 284 v9" stroke="#FFC857" stroke-width="3.5" stroke-linecap="round"/><circle cx="437" cy="309" r="3" fill="#FFC857"/><circle cx="448" cy="309" r="3" fill="#FFC857"/>
 </g>
-<g font-family="Mulish,system-ui,sans-serif" font-weight="800" font-size="13" fill="#C3C8D8" text-anchor="middle">
+<g class="lbl" font-family="Mulish,system-ui,sans-serif" font-weight="800" font-size="13" fill="#C3C8D8" text-anchor="middle">
 <text x="96" y="152">Gmail</text><text x="424" y="152">Figma</text><text x="76" y="358">Notion</text><text x="444" y="358">Calendar</text>
 </g>
 <g filter="url(#f-sh)">
@@ -1092,6 +1195,154 @@ footer .soc a:hover{color:var(--fg)}
   </div>
 </div>
 
+<!-- ================= BANK CASE ================= -->
+<div class="view t-teal" id="v-icici" hidden>
+  <div class="wrap">
+    <a class="back" href="#work"><svg class="ic" aria-hidden="true"><use href="#i-arrow-left"/></svg>All work</a>
+    <div class="cs-hero">
+      <div>
+        <span class="eyebrow" style="color:var(--teal)">Case study · Enterprise banking</span>
+        <h1>Enterprise banking: running design delivery across three banking platforms</h1>
+        <p>At Canvs, I manage design delivery for a leading private-sector bank's mobile banking app, internet banking and digital onboarding journeys. That means a steady stream of feature requests, compliance changes and design reviews, handled by a multi-designer team against real release dates.</p>
+      </div>
+      <div class="cs-art"><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract illustration of banking design requests moving through a delivery board">
+<defs><linearGradient id="g-ic" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B2A2E"/><stop offset=".6" stop-color="#132238"/><stop offset="1" stop-color="#2A1330"/></linearGradient>
+<linearGradient id="g-tb" x1="0" x2="1"><stop offset="0" stop-color="#22D3C5"/><stop offset="1" stop-color="#E0457B"/></linearGradient></defs>
+<rect width="400" height="250" fill="url(#g-ic)"/>
+<circle cx="60" cy="40" r="90" fill="#22D3C5" opacity=".14"/><circle cx="360" cy="230" r="100" fill="#E0457B" opacity=".16"/>
+<g stroke="#fff" stroke-opacity=".05"><path d="M0 62H400M0 124H400M0 186H400"/></g>
+<g filter="url(#f-sh)">
+<rect x="20" y="30" width="96" height="190" rx="14" fill="#122B35" stroke="#1F4A55"/>
+<text x="32" y="50" font-family="JetBrains Mono,ui-monospace,monospace" font-size="7" fill="#22D3C5" font-weight="700">REQUESTS</text>
+<rect x="30" y="60" width="76" height="30" rx="7" fill="#183A45"/><circle cx="40" cy="75" r="4" fill="#FFC857"/><rect x="50" y="71" width="46" height="4" rx="2" fill="#9FDCD8"/><rect x="50" y="79" width="30" height="3" rx="1.5" fill="#3F6B75"/>
+<rect x="30" y="96" width="76" height="30" rx="7" fill="#183A45"/><circle cx="40" cy="111" r="4" fill="#E0457B"/><rect x="50" y="107" width="40" height="4" rx="2" fill="#9FDCD8"/><rect x="50" y="115" width="34" height="3" rx="1.5" fill="#3F6B75"/>
+<rect x="30" y="132" width="76" height="30" rx="7" fill="#183A45"/><circle cx="40" cy="147" r="4" fill="#4CC9F0"/><rect x="50" y="143" width="44" height="4" rx="2" fill="#9FDCD8"/><rect x="50" y="151" width="24" height="3" rx="1.5" fill="#3F6B75"/>
+</g>
+<g filter="url(#f-sh)">
+<rect x="152" y="30" width="96" height="190" rx="14" fill="#1C2340" stroke="#2F3860"/>
+<text x="164" y="50" font-family="JetBrains Mono,ui-monospace,monospace" font-size="7" fill="#B06CFF" font-weight="700">IN DESIGN</text>
+<rect x="162" y="60" width="76" height="46" rx="7" fill="#262E52"/>
+<rect x="170" y="68" width="22" height="30" rx="4" fill="none" stroke="#B06CFF" stroke-width="2"/><rect x="198" y="70" width="32" height="4" rx="2" fill="#C9C3F5"/><rect x="198" y="78" width="24" height="3" rx="1.5" fill="#4A5178"/><rect x="198" y="86" width="28" height="8" rx="4" fill="#B06CFF" opacity=".6"/>
+<rect x="162" y="112" width="76" height="30" rx="7" fill="#262E52"/><circle cx="172" cy="127" r="4" fill="#FF7A59"/><rect x="182" y="123" width="46" height="4" rx="2" fill="#C9C3F5"/><rect x="182" y="131" width="30" height="3" rx="1.5" fill="#4A5178"/>
+<g transform="translate(206 150)"><rect width="42" height="20" rx="10" fill="#E0457B"/><text x="21" y="13.5" font-family="Mulish,system-ui,sans-serif" font-size="7.5" font-weight="900" fill="#fff" text-anchor="middle">Review</text></g>
+</g>
+<g filter="url(#f-sh)">
+<rect x="284" y="30" width="96" height="190" rx="14" fill="#122F29" stroke="#1F5247"/>
+<text x="296" y="50" font-family="JetBrains Mono,ui-monospace,monospace" font-size="7" fill="#36E2A6" font-weight="700">DELIVERED</text>
+<g>
+<rect x="294" y="60" width="76" height="24" rx="7" fill="#17403A"/><circle cx="305" cy="72" r="5" fill="#36E2A6"/><path d="M302.5 72 l1.8 1.8 l3.2 -3.6" fill="none" stroke="#0A2A1E" stroke-width="1.5" stroke-linecap="round"/><rect x="315" y="69" width="44" height="5" rx="2.5" fill="#A7EBD2"/>
+<rect x="294" y="90" width="76" height="24" rx="7" fill="#17403A"/><circle cx="305" cy="102" r="5" fill="#36E2A6"/><path d="M302.5 102 l1.8 1.8 l3.2 -3.6" fill="none" stroke="#0A2A1E" stroke-width="1.5" stroke-linecap="round"/><rect x="315" y="99" width="38" height="5" rx="2.5" fill="#A7EBD2"/>
+<rect x="294" y="120" width="76" height="24" rx="7" fill="#17403A"/><circle cx="305" cy="132" r="5" fill="#36E2A6"/><path d="M302.5 132 l1.8 1.8 l3.2 -3.6" fill="none" stroke="#0A2A1E" stroke-width="1.5" stroke-linecap="round"/><rect x="315" y="129" width="42" height="5" rx="2.5" fill="#A7EBD2"/>
+</g>
+<text x="296" y="178" font-family="Mulish,system-ui,sans-serif" font-size="22" font-weight="900" fill="#36E2A6">83%</text>
+<text x="296" y="192" font-family="JetBrains Mono,ui-monospace,monospace" font-size="6.5" fill="#7FBFAE" font-weight="700">SHIPPED</text>
+</g>
+<g fill="none" stroke="url(#g-tb)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 6"><path d="M118 111 C 135 111, 135 95, 150 95"/><path d="M250 95 C 265 95, 268 102, 282 102"/></g>
+<g filter="url(#f-sh)"><circle cx="200" cy="222" r="17" fill="url(#g-tb)"/>
+<path d="M191 227 h18 M193 225 v-7 M198 225 v-7 M203 225 v-7 M207 225 v-7 M190 218 l10 -6 l10 6z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></g>
+</svg></div>
+    </div>
+    <div class="meta">
+      <div><span class="tile sm t-teal"><svg class="ic" aria-hidden="true"><use href="#i-user-round"/></svg></span><div><small>Role</small><span>Project Manager, UI/UX</span></div></div>
+      <div><span class="tile sm t-berry"><svg class="ic" aria-hidden="true"><use href="#i-landmark"/></svg></span><div><small>Client</small><span>ICICI Bank</span></div></div>
+      <div><span class="tile sm t-amber"><svg class="ic" aria-hidden="true"><use href="#i-monitor-smartphone"/></svg></span><div><small>Platforms</small><span>Mobile, web &amp; onboarding</span></div></div>
+      <div><span class="tile sm t-violet"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><div><small>Team</small><span>8-person design team</span></div></div>
+    </div>
+
+    <div class="nda"><svg class="ic" aria-hidden="true"><use href="#i-eye-off"/></svg><span>Product screens are under NDA, so this case study shows the delivery work rather than the designs. Walkthroughs are available on request.</span></div>
+
+    <div class="cs-sec">
+      <span class="eyebrow" style="color:var(--teal)">Scale</span>
+      <h2>What the work looks like, in numbers</h2>
+      <div class="stats num">
+        <div class="stat t-teal"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-list-todo"/></svg></span><b>200</b><span>mobile app requests tracked since April 2026</span><div class="bar"><i style="width:100%"></i></div></div>
+        <div class="stat t-mint"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-badge-check"/></svg></span><b>83%</b><span>of those already delivered</span><div class="bar"><i style="width:83%"></i></div></div>
+        <div class="stat t-berry"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg></span><b>3</b><span>platforms running in parallel</span><div class="bar"><i style="width:60%"></i></div></div>
+        <div class="stat t-amber"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-message-square-text"/></svg></span><b>50+</b><span>Figma review threads with the client each month</span><div class="bar"><i style="width:70%"></i></div></div>
+      </div>
+    </div>
+
+    <div class="cs-sec">
+      <span class="eyebrow" style="color:var(--teal)">The platforms</span>
+      <h2>Three products, one delivery rhythm</h2>
+      <div class="plist" style="grid-template-columns:repeat(3,1fr)">
+        <div class="pitem t-teal"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-smartphone"/></svg></span><b>Mobile banking app</b><span>The bank's flagship app and its new version: payments, accounts, cards, investments and service journeys, plus web versions of key flows.</span></div>
+        <div class="pitem t-berry"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span><b>Retail internet banking</b><span>The new internet banking experience and updates to the live site, designed across desktop, tablet and mobile breakpoints.</span></div>
+        <div class="pitem t-amber"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-id-card"/></svg></span><b>Customer onboarding journeys</b><span>Digital applications for loans, credit cards and accounts, from eligibility to KYC and e-sign.</span></div>
+      </div>
+    </div>
+
+    <div class="cs-sec">
+      <span class="eyebrow" style="color:var(--teal)">Scope</span>
+      <h2>The kinds of work we deliver</h2>
+      <div class="themes">
+        <span class="t-teal"><svg class="ic" aria-hidden="true"><use href="#i-qr-code"/></svg>UPI &amp; payments</span>
+        <span class="t-coral"><svg class="ic" aria-hidden="true"><use href="#i-shield-check"/></svg>KYC &amp; compliance</span>
+        <span class="t-berry"><svg class="ic" aria-hidden="true"><use href="#i-piggy-bank"/></svg>Deposits &amp; nominees</span>
+        <span class="t-violet"><svg class="ic" aria-hidden="true"><use href="#i-credit-card"/></svg>Cards</span>
+        <span class="t-amber"><svg class="ic" aria-hidden="true"><use href="#i-hand-coins"/></svg>Loans</span>
+        <span class="t-sky"><svg class="ic" aria-hidden="true"><use href="#i-chart-pie"/></svg>Mutual funds &amp; demat</span>
+        <span class="t-mint"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>NRI banking</span>
+        <span class="t-pink"><svg class="ic" aria-hidden="true"><use href="#i-accessibility"/></svg>Accessibility &amp; design system</span>
+        <span class="t-iris"><svg class="ic" aria-hidden="true"><use href="#i-monitor-smartphone"/></svg>Responsive breakpoints</span>
+      </div>
+    </div>
+
+    <div class="cs-sec">
+      <span class="eyebrow" style="color:var(--teal)">How I run it</span>
+      <h2>From client request to delivered design</h2>
+      <div class="pipeline">
+        <span class="node t-sky"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-inbox"/></svg></span>Client request</span><span class="sep"><svg class="ic" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        <span class="node t-teal"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-notebook-pen"/></svg></span>Notion tracker card</span><span class="sep"><svg class="ic" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        <span class="node t-violet"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-pen-tool"/></svg></span>Design in Figma</span><span class="sep"><svg class="ic" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        <span class="node hl t-berry"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-message-square-text"/></svg></span>Client review</span><span class="sep"><svg class="ic" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        <span class="node hl t-coral"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-scan-eye"/></svg></span>Build QA</span><span class="sep"><svg class="ic" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+        <span class="node t-mint"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-rocket"/></svg></span>Delivered</span>
+      </div>
+      <div class="plist" style="margin-top:18px">
+        <div class="pitem t-teal"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-list-todo"/></svg></span><b>One tracker per platform</b><span>Every request becomes a card with a type (main track, business-as-usual or support), priority, client owner, designer and target date.</span></div>
+        <div class="pitem t-berry"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><b>Owners on both sides</b><span>Each card names a client owner and a Canvs designer, so nobody has to ask who's on it.</span></div>
+        <div class="pitem t-amber"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-message-square-text"/></svg></span><b>Feedback in one place</b><span>Client comments stay in Figma and are logged against the card, so revisions don't get lost in email.</span></div>
+        <div class="pitem t-coral"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-scan-eye"/></svg></span><b>QA before go-live</b><span>Builds are checked against the design, and issues are raised before release.</span></div>
+      </div>
+    </div>
+
+    <div class="cs-sec">
+      <span class="eyebrow" style="color:var(--teal)">Built with Claude</span>
+      <div class="cl-box">
+        <div class="cl-top">
+          <div class="cl-copy">
+            <span class="cl-badge"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg>Claude Cowork</span>
+            <h2>An AI co-pilot for a high-volume account</h2>
+            <p>To keep context without chasing people, I built a small set of Claude workflows for this account. They collect client emails, Figma comments and tracker updates in one place, so nothing a client asks for slips between channels.</p>
+          </div>
+          <div class="cl-flow" aria-hidden="true">
+            <div class="cl-col">
+              <span class="t-coral"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Gmail</span>
+              <span class="t-violet"><svg class="ic" aria-hidden="true"><use href="#i-pen-tool"/></svg>Figma</span>
+              <span class="t-sky"><svg class="ic" aria-hidden="true"><use href="#i-notebook-pen"/></svg>Notion</span>
+              <span class="t-amber"><svg class="ic" aria-hidden="true"><use href="#i-calendar-days"/></svg>Calendar</span>
+            </div>
+            <div class="cl-core"><i></i><span><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg></span></div>
+            <div class="cl-col out">
+              <span><svg class="ic" aria-hidden="true"><use href="#i-radar"/></svg>Context hub</span>
+              <span><svg class="ic" aria-hidden="true"><use href="#i-sun"/></svg>Morning brief</span>
+              <span><svg class="ic" aria-hidden="true"><use href="#i-bell-ring"/></svg>Mentions digest</span>
+            </div>
+          </div>
+        </div>
+        <div class="cl-cards">
+          <div class="cl-card t-violet"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-radar"/></svg></span><b>Client context hub</b><p>Email, Figma comments and tracker updates on one page, searchable by card, owner or tag.</p><small><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>On demand</small></div>
+          <div class="cl-card t-amber"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-sun"/></svg></span><b>Morning brief</b><p>Each weekday's meetings and anything that needs a reply first, in one glance.</p><small><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Weekdays · 8 AM</small></div>
+          <div class="cl-card t-sky"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-bell-ring"/></svg></span><b>Mentions digest</b><p>A daily summary of where I'm tagged across Gmail, Notion and Figma.</p><small><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Daily · 10 AM</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="next"><div><span class="eyebrow">Next case study</span><h3>UTS Mobile App</h3></div><a class="btn primary" href="#uts">Read it <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></div>
+  </div>
+</div>
+
 <!-- ================= ABOUT ================= -->
 <div class="view" id="v-about" hidden>
   <div class="wrap">
@@ -1115,7 +1366,7 @@ footer .soc a:hover{color:var(--fg)}
           <h2 style="font-size:clamp(36px,5.4vw,56px);font-weight:900;margin:14px 0 20px">Hi, I'm Spruha</h2>
           <div class="muted" style="font-size:17px;max-width:62ch;display:flex;flex-direction:column;gap:14px">
             <p>I'm curious about how people use products, and how small design decisions make everyday experiences smoother.</p>
-            <p>I'm a project and design manager with a background in project management, quality control and team leadership. I coordinate stakeholders, align business goals with design outcomes, and make sure UI/UX projects ship with both user and business value intact.</p>
+            <p>Today I lead UI/UX delivery at Canvs for enterprise banking mobile and web products. I turn client requirements into clear plans, run Agile workflows and stage-wise design QA, and keep designers and developers aligned so the design intent survives to release. I also build AI-assisted workflows with Claude that cut the time spent on status reports and follow-ups.</p>
           </div>
           <div class="facts">
             <span class="t-coral"><svg class="ic" aria-hidden="true"><use href="#i-map-pin"/></svg>Mumbai, India</span>
@@ -1136,6 +1387,8 @@ footer .soc a:hover{color:var(--fg)}
         <div class="skill t-sky"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-git-merge"/></svg></span>Design–Developer Collaboration</div>
         <div class="skill t-pink"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span>Cross-functional Leadership</div>
         <div class="skill t-mint"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-square-kanban"/></svg></span>Agile Project Delivery</div>
+        <div class="skill t-iris"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-shield-check"/></svg></span>Design QA &amp; UAT</div>
+        <div class="skill t-coral"><span class="tile sm"><svg class="ic" aria-hidden="true"><use href="#i-handshake"/></svg></span>Stakeholder &amp; Client Management</div>
       </div>
     </section>
 
@@ -1143,9 +1396,9 @@ footer .soc a:hover{color:var(--fg)}
       <div class="sec-head"><span class="eyebrow">Experience</span><h2>Where I've worked</h2></div>
       <div class="timeline">
         <div class="job t-iris"><div class="hd"><div class="who"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-building-2"/></svg></span><div><h3>Project Manager, UI/UX</h3><div class="co">Canvs · Mumbai</div></div></div><span class="when">JUN 2024 – PRESENT</span></div>
-          <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Delivered UI/UX projects <b>95% on time</b> and within budget.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Cut designer–developer turnaround by <b>25%</b>.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Stage-wise QA improved design consistency and usability by <b>30%</b>.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Moved the team to Agile workflows, speeding up execution by <b>20%</b>.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Kept project success rate <b>above 90%</b> through risk management.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Created wireframes, prototypes and journey maps, and folded user feedback into product decisions.</span></li></ul></div>
+          <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Lead UI/UX delivery for enterprise banking apps: <b>95% on time</b> and within budget, <b>90%+</b> project success rate.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Cut design-to-development turnaround by <b>25%</b> with structured handoffs and UAT build checks.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Improved design consistency and usability by <b>30%</b> through stage-wise design QA at every stage.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Rolled out Agile workflows and Notion trackers, making execution <b>20% faster</b>.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Manage client requirements, stakeholder updates and delivery risks across parallel workstreams.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Built Claude AI workflows that automate daily PM routines: morning brief, mention digests, Figma feedback and a client context hub.</span></li></ul></div>
         <div class="job t-violet"><div class="hd"><div class="who"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-building-2"/></svg></span><div><h3>Project Manager</h3><div class="co">Archstore · Mumbai</div></div></div><span class="when">MAY 2023 – FEB 2024</span></div>
-          <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Defined scope and deliverables; coordinated designers, developers and clients.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Tracked delivery in Jira, Swanly Roadmaps, OKR Board and Atlas.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Ran product demos and managed vendor onboarding end to end.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Set up Google Analytics and Tag Manager tracking.</span></li></ul></div>
+          <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Defined scope and deliverables; coordinated designers, developers and clients.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Facilitated designer–developer collaboration for accurate implementation.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Tracked delivery in Jira, Swanly Roadmaps, OKR Board and Atlas; set up Google Analytics tracking.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Ran product demos and managed vendor onboarding end to end.</span></li></ul></div>
         <div class="job t-coral"><div class="hd"><div class="who"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-building-2"/></svg></span><div><h3>Project Manager (Intern)</h3><div class="co">Pinchforth · Boston</div></div></div><span class="when">JUN 2022 – OCT 2022</span></div>
           <ul><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Turned client requirements into weekly plans and tracked progress.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Ran design quality checks for usability and consistency.</span></li></ul></div>
         <div class="job t-amber"><div class="hd"><div class="who"><span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-building-2"/></svg></span><div><h3>Senior Catalogue Executive</h3><div class="co">FirstCry.com · Pune</div></div></div><span class="when">DEC 2020 – APR 2022</span></div>
@@ -1176,7 +1429,7 @@ footer .soc a:hover{color:var(--fg)}
           <div class="roles"><span class="tag t-iris"><svg class="ic" aria-hidden="true"><use href="#i-clipboard-list"/></svg>UI/UX Project Management</span><span class="tag t-coral"><svg class="ic" aria-hidden="true"><use href="#i-palette"/></svg>Design Management</span><span class="tag t-mint"><svg class="ic" aria-hidden="true"><use href="#i-workflow"/></svg>Design Operations</span></div>
           <div class="ctas" style="margin-top:8px">
             <a class="btn primary" href="https://www.linkedin.com/in/spruhathaware/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg>Message on LinkedIn</a>
-            <a class="btn" href="https://spruhaathaware.lovable.app/SpruhaThawareResume.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg>View resume</a>
+            <a class="btn" href="Spruha_Thaware_Resume_Project_Manager_UIUX.pdf" target="_blank" rel="noopener" download><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Download resume</a>
           </div>
         </div>
         <div class="clist">
@@ -1194,6 +1447,50 @@ footer .soc a:hover{color:var(--fg)}
 <footer><div class="wrap"><span>© 2026 Spruha Thaware · Project &amp; Design Manager</span><div class="soc"><a href="https://www.linkedin.com/in/spruhathaware/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></a><a href="#contact" aria-label="Contact"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></a></div></div></footer>
 
 <template id="case-cards">
+  <a class="case feature t-teal" href="#icici">
+    <div class="cover"><span class="new"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg>New</span><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract illustration of banking design requests moving through a delivery board">
+<defs><linearGradient id="g-ic" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B2A2E"/><stop offset=".6" stop-color="#132238"/><stop offset="1" stop-color="#2A1330"/></linearGradient>
+<linearGradient id="g-tb" x1="0" x2="1"><stop offset="0" stop-color="#22D3C5"/><stop offset="1" stop-color="#E0457B"/></linearGradient></defs>
+<rect width="400" height="250" fill="url(#g-ic)"/>
+<circle cx="60" cy="40" r="90" fill="#22D3C5" opacity=".14"/><circle cx="360" cy="230" r="100" fill="#E0457B" opacity=".16"/>
+<g stroke="#fff" stroke-opacity=".05"><path d="M0 62H400M0 124H400M0 186H400"/></g>
+<g filter="url(#f-sh)">
+<rect x="20" y="30" width="96" height="190" rx="14" fill="#122B35" stroke="#1F4A55"/>
+<text x="32" y="50" font-family="JetBrains Mono,ui-monospace,monospace" font-size="7" fill="#22D3C5" font-weight="700">REQUESTS</text>
+<rect x="30" y="60" width="76" height="30" rx="7" fill="#183A45"/><circle cx="40" cy="75" r="4" fill="#FFC857"/><rect x="50" y="71" width="46" height="4" rx="2" fill="#9FDCD8"/><rect x="50" y="79" width="30" height="3" rx="1.5" fill="#3F6B75"/>
+<rect x="30" y="96" width="76" height="30" rx="7" fill="#183A45"/><circle cx="40" cy="111" r="4" fill="#E0457B"/><rect x="50" y="107" width="40" height="4" rx="2" fill="#9FDCD8"/><rect x="50" y="115" width="34" height="3" rx="1.5" fill="#3F6B75"/>
+<rect x="30" y="132" width="76" height="30" rx="7" fill="#183A45"/><circle cx="40" cy="147" r="4" fill="#4CC9F0"/><rect x="50" y="143" width="44" height="4" rx="2" fill="#9FDCD8"/><rect x="50" y="151" width="24" height="3" rx="1.5" fill="#3F6B75"/>
+</g>
+<g filter="url(#f-sh)">
+<rect x="152" y="30" width="96" height="190" rx="14" fill="#1C2340" stroke="#2F3860"/>
+<text x="164" y="50" font-family="JetBrains Mono,ui-monospace,monospace" font-size="7" fill="#B06CFF" font-weight="700">IN DESIGN</text>
+<rect x="162" y="60" width="76" height="46" rx="7" fill="#262E52"/>
+<rect x="170" y="68" width="22" height="30" rx="4" fill="none" stroke="#B06CFF" stroke-width="2"/><rect x="198" y="70" width="32" height="4" rx="2" fill="#C9C3F5"/><rect x="198" y="78" width="24" height="3" rx="1.5" fill="#4A5178"/><rect x="198" y="86" width="28" height="8" rx="4" fill="#B06CFF" opacity=".6"/>
+<rect x="162" y="112" width="76" height="30" rx="7" fill="#262E52"/><circle cx="172" cy="127" r="4" fill="#FF7A59"/><rect x="182" y="123" width="46" height="4" rx="2" fill="#C9C3F5"/><rect x="182" y="131" width="30" height="3" rx="1.5" fill="#4A5178"/>
+<g transform="translate(206 150)"><rect width="42" height="20" rx="10" fill="#E0457B"/><text x="21" y="13.5" font-family="Mulish,system-ui,sans-serif" font-size="7.5" font-weight="900" fill="#fff" text-anchor="middle">Review</text></g>
+</g>
+<g filter="url(#f-sh)">
+<rect x="284" y="30" width="96" height="190" rx="14" fill="#122F29" stroke="#1F5247"/>
+<text x="296" y="50" font-family="JetBrains Mono,ui-monospace,monospace" font-size="7" fill="#36E2A6" font-weight="700">DELIVERED</text>
+<g>
+<rect x="294" y="60" width="76" height="24" rx="7" fill="#17403A"/><circle cx="305" cy="72" r="5" fill="#36E2A6"/><path d="M302.5 72 l1.8 1.8 l3.2 -3.6" fill="none" stroke="#0A2A1E" stroke-width="1.5" stroke-linecap="round"/><rect x="315" y="69" width="44" height="5" rx="2.5" fill="#A7EBD2"/>
+<rect x="294" y="90" width="76" height="24" rx="7" fill="#17403A"/><circle cx="305" cy="102" r="5" fill="#36E2A6"/><path d="M302.5 102 l1.8 1.8 l3.2 -3.6" fill="none" stroke="#0A2A1E" stroke-width="1.5" stroke-linecap="round"/><rect x="315" y="99" width="38" height="5" rx="2.5" fill="#A7EBD2"/>
+<rect x="294" y="120" width="76" height="24" rx="7" fill="#17403A"/><circle cx="305" cy="132" r="5" fill="#36E2A6"/><path d="M302.5 132 l1.8 1.8 l3.2 -3.6" fill="none" stroke="#0A2A1E" stroke-width="1.5" stroke-linecap="round"/><rect x="315" y="129" width="42" height="5" rx="2.5" fill="#A7EBD2"/>
+</g>
+<text x="296" y="178" font-family="Mulish,system-ui,sans-serif" font-size="22" font-weight="900" fill="#36E2A6">83%</text>
+<text x="296" y="192" font-family="JetBrains Mono,ui-monospace,monospace" font-size="6.5" fill="#7FBFAE" font-weight="700">SHIPPED</text>
+</g>
+<g fill="none" stroke="url(#g-tb)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 6"><path d="M118 111 C 135 111, 135 95, 150 95"/><path d="M250 95 C 265 95, 268 102, 282 102"/></g>
+<g filter="url(#f-sh)"><circle cx="200" cy="222" r="17" fill="url(#g-tb)"/>
+<path d="M191 227 h18 M193 225 v-7 M198 225 v-7 M203 225 v-7 M207 225 v-7 M190 218 l10 -6 l10 6z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></g>
+</svg></div>
+    <div class="body">
+      <div class="tags"><span class="tag"><svg class="ic" aria-hidden="true"><use href="#i-landmark"/></svg>Enterprise banking</span><span class="tag"><svg class="ic" aria-hidden="true"><use href="#i-clipboard-list"/></svg>Delivery management</span><span class="tag"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg>3 platforms</span></div>
+      <h3>Enterprise banking: design delivery across three platforms</h3>
+      <p>Managing a high-volume stream of feature, compliance and design-review work for the bank's mobile app, internet banking and onboarding journeys.</p>
+      <div class="result num"><span class="k"><b>200</b>app requests since April · 83% shipped</span><span class="go"><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span></div>
+    </div>
+  </a>
   <a class="case t-coral" href="#uts">
     <div class="cover"><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of the redesigned UTS ticket booking screen">
 <rect width="400" height="250" fill="url(#g-uts)"/>
@@ -1296,17 +1593,24 @@ footer .soc a:hover{color:var(--fg)}
 (function(){
   var tpl=document.getElementById('case-cards');
   document.querySelectorAll('[data-cases]').forEach(function(el){el.appendChild(tpl.content.cloneNode(true));});
-  var views=['home','work','uts','collab','ai','about','contact'];
+  var views=['home','work','icici','uts','collab','ai','about','contact'];
   var nav=document.getElementById('nav'), btn=document.getElementById('menu-btn');
   function show(){
     var v=(location.hash||'#home').slice(1); if(views.indexOf(v)<0) v='home';
     views.forEach(function(n){document.getElementById('v-'+n).hidden=(n!==v);});
-    var key=(v==='uts'||v==='collab')?'work':v;
+    var key=(v==='uts'||v==='collab'||v==='icici')?'work':v;
     nav.querySelectorAll('a').forEach(function(a){ if(a.dataset.v===key) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');});
     nav.classList.remove('open'); btn.setAttribute('aria-expanded','false');
     window.scrollTo(0,0);
   }
   window.addEventListener('hashchange',show); show();
+  // theme toggle
+  var tbtn=document.getElementById('theme-btn'),root=document.documentElement;
+  function setTheme(t,save){root.setAttribute('data-theme',t);tbtn.setAttribute('aria-label',t==='light'?'Switch to dark mode':'Switch to light mode');if(save){try{localStorage.setItem('st-theme',t);}catch(e){}}}
+  var saved=null;try{saved=localStorage.getItem('st-theme');}catch(e){}
+  setTheme(saved||(root.getAttribute('data-theme')==='light'?'light':'dark'),false);
+  tbtn.addEventListener('click',function(){setTheme(root.getAttribute('data-theme')==='light'?'dark':'light',true);});
+
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);});
   document.querySelectorAll('.filters button').forEach(function(b){
     b.addEventListener('click',function(){
@@ -1328,5 +1632,6 @@ footer .soc a:hover{color:var(--fg)}
   });
 })();
 </script>
+
 
 </body></html>
